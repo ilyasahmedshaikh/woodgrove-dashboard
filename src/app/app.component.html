@@ -1,0 +1,11 @@
+<app-top-bar></app-top-bar>
+
+<div class="d-flex">
+  <div class="sidebar" [ngClass]="(toggle) ? 'opened' : ''">
+    <app-sidebar></app-sidebar>
+  </div>
+  
+  <div class="right-section" [ngClass]="(toggle) ? 'opened' : ''">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-12 text-center tabs">
+        <a [ngClass]="(activeTab == 1) ? 'active' : ''" (click)="onTabChange(1)">Today</a>
+        <a [ngClass]="(activeTab == 2) ? 'active' : ''" (click)="onTabChange(2)">Customer</a>
+        <a [ngClass]="(activeTab == 3) ? 'active' : ''" (click)="onTabChange(3)">Transaction</a>
+        <a [ngClass]="(activeTab == 4) ? 'active' : ''" (click)="onTabChange(4)">Profit</a>
+    </div>
+
+    <div class="col-12">
+        <div *ngIf="activeTab == 1">
+            <img src="../../../assets/img/tab1.png" alt="tab content">
+        </div>
+
+        <div *ngIf="activeTab == 2">
+            <img src="../../../assets/img/tab2.png" alt="tab content">
+        </div>
+    </div>
+</div>

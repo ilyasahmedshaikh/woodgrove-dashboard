@@ -1,0 +1,82 @@
+<div class="sidebar">
+    <div class="search-bar">
+        <img src="../../../assets/img/magnifiying-glass.svg" alt="">
+        <input [ngClass]="(!toggle) ? 'opened' : ''" type="text" placeholder="Search">
+    </div>
+
+    <div class="links">
+        <ul class="parent">
+            <li class="active">
+                <span>
+                    <i class="fas fa-tachometer-alt"></i> 
+                    <span [ngClass]="(!toggle) ? 'd-none' : ''">Dashboard</span>
+                </span>
+            </li>
+            <li (click)="openChild()">
+                <span>
+                    <i class="fas fa-laptop"></i> 
+                    <span [ngClass]="(!toggle) ? 'd-none' : ''">Common Configuration</span>
+                </span>
+                <i [ngClass]="(!toggle) ? 'd-none' : ''" class="fas fa-chevron-down"></i>
+                <ul class="child-list" [ngClass]="(childOpenBool) ? 'open' : ''">
+                    <li>Content Management</li>
+                    <li>Info Message Management</li>
+                    <li>Menu Management</li>
+                    <li>Error Message Management</li>
+                    <li>Help Text Management</li>
+                    <li>Device Version</li>
+                    <li>Campaign Management</li>
+                    <li>Limit Management</li>
+                    <li>Manage Swift Bank</li>
+                    <li>All User Password Reset</li>
+                    <li>Loan Interest Configuration</li>
+                    <li>Manage Budget Category</li>
+                    <li>Branch / ATM Management</li>
+                    <li>Break TD Reason Management</li>
+                    <li>Goal Category Management</li>
+                    <li>Back Office User Management</li>
+                    <li>Transaction Attribute</li>
+                    <li>Transaction Fee Management</li>
+                </ul>
+            </li>
+            <li>
+                <span>
+                    <i class="fas fa-user-alt"></i> 
+                    <span [ngClass]="(!toggle) ? 'd-none' : ''">Transactional Configuration</span>
+                </span>
+                <i [ngClass]="(!toggle) ? 'd-none' : ''" class="fas fa-chevron-down"></i>
+            </li>
+            <li>
+                <span>
+                    <i class="fas fa-university"></i> 
+                    <span [ngClass]="(!toggle) ? 'd-none' : ''">Banking</span>
+                </span>
+                <i [ngClass]="(!toggle) ? 'd-none' : ''" class="fas fa-chevron-down"></i>
+            </li>
+            <li>
+                <span>
+                    <i class="fas fa-users"></i> 
+                    <span [ngClass]="(!toggle) ? 'd-none' : ''">Customer Management</span>
+                </span>
+                <i [ngClass]="(!toggle) ? 'd-none' : ''" class="fas fa-chevron-down"></i>
+            </li>
+            <li>
+                <span>
+                    <i class="fas fa-paste"></i> 
+                    <span [ngClass]="(!toggle) ? 'd-none' : ''">Reports</span>
+                </span> 
+                <i [ngClass]="(!toggle) ? 'd-none' : ''" class="fas fa-chevron-down"></i>
+            </li>
+            <li>
+                <span>
+                    <i class="fas fa-shield-alt"></i>
+                    <span [ngClass]="(!toggle) ? 'd-none' : ''">Security Settings</span>
+                </span>
+                <i [ngClass]="(!toggle) ? 'd-none' : ''" class="fas fa-chevron-down"></i>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+

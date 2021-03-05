@@ -1,0 +1,26 @@
+@import './assets/scss/variables.scss';
+@import './assets/scss/mixins.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+// scroll bar 
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    background: $dark-blue;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #eee;
+    -webkit-border-radius: 10px;
+    border-left: 1px #999 #888;
+}

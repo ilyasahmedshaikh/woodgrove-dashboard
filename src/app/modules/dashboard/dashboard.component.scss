@@ -1,0 +1,22 @@
+@import '../../../styles.scss';
+
+.tabs {
+    a {
+        font-weight: 600;
+        padding: 10px 15px;
+        color: $content-grey;
+        text-decoration: none;
+        cursor: pointer;
+        &.active {
+            color: $orange;
+            border-bottom: 2px solid $orange;
+        }
+    }
+}
+
+img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}

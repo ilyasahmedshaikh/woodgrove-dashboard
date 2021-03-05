@@ -1,0 +1,80 @@
+@import '../../../styles.scss';
+
+.sidebar {
+    box-shadow: 0px 3px 17px #ADB3C480;
+    height: 92vh;
+    padding: 20px;
+    overflow-y: auto;
+    .search-bar {
+        position: relative;
+        input {
+            border: 1px solid #ADB3C4;
+            border-radius: 4px;
+            padding: 5px 10px 5px 35px;
+            width: 100%;
+            &:focus {
+                outline: 0;
+            }
+            &.opened {
+                padding: 5px 10px 5px 25px;
+            }
+        }
+        img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    }
+    .links {
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            &.parent {
+                padding-top: 20px;
+            }
+            li {
+                padding: 5px 0;
+                color: $blue;
+                font-weight: 500;
+                font-size: 15px;
+                cursor: pointer;
+                transition: 0.2s;
+                height: 35px;
+                i {
+                    color: $grey;
+                    float: right;
+                    font-size: 11px;
+                    padding: 8px 0 0 0;
+                }
+                &.active, &:hover {
+                    color: $orange;
+                    span {
+                        i {
+                            color: $orange;
+                        }
+                    }
+                }
+                span {
+                    i {
+                        float: left;
+                        padding: 4px 10px 0 0;
+                        font-size: 15px;
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        .child-list {
+            padding: 10px 0 0 15px;
+            display: none;
+            &.open {
+                display: block;
+            }
+            li {
+                color: $content-grey;
+                font-size: 13px;
+            }
+        }
+    }
+}
